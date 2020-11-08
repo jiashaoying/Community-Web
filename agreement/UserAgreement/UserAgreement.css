@@ -1,0 +1,48 @@
+body
+{
+	background-color: white;
+}
+
+#title
+{
+	color: #333333;
+	font-size: 1.2em;
+	line-height: 40px;
+	margin: 0px 20px;
+	font-weight: bold;
+}
+.name
+{
+	color: #666666;
+	font-size: 1em;
+	line-height: 1.5;
+	margin: 0px 20px;
+	font-weight: bold;
+}
+
+.detail
+{
+	text-indent: 2em;
+	color: #666666;
+	font-size: 1em;
+	line-height: 1.5;
+	margin: 0px 20px;
+	font-weight: normal;
+}
+
+/***************************Night   夜间模式********************************/
+html[apptheme=night] body {
+    background-color: #23252A;
+}
+
+html[apptheme=night] .name {
+    color: #BBBBBB;
+}
+
+html[apptheme=night] #title {
+    color: #FFFFFF;
+}
+
+html[apptheme=night] .detail {
+    color: #BBBBBB;
+}

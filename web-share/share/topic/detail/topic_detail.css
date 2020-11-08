@@ -1,0 +1,956 @@
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+html {
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+
+/**
+ * Remove the margin in all browsers.
+ */
+
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 10+.
+ */
+
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+
+[hidden] {
+  display: none;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+*[contenteditable] {
+  -webkit-user-select: auto !important;
+  -moz-user-select: auto !important;
+  -ms-user-select: auto !important;
+  user-select: auto !important;
+}
+*:focus {
+  outline: none;
+}
+a {
+  background: transparent;
+  text-decoration: none;
+  outline: none;
+}
+
+.hupu-m-detail-content .footer {
+  margin-bottom: 52px;
+}
+.light-reply-commentary .hp-m-commentary-header {
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+}
+.light-reply-commentary .hp-m-commentary-header .light-icon {
+  margin-left: 5px;
+  width: 4px;
+  height: inherit;
+  display: inline-block;
+  background: #c01e2f;
+}
+
+.light-reply-commentary .hp-m-discuss-item-wrap .hp-m-discuss-item-wrap-content-quote {
+  background-color: #e5e5e5;
+  color: #222222;
+}
+.light-reply-commentary .grey-padding {
+  height: 12px;
+  width: 100%;
+}
+.hupu-m-detail-content-night .light-reply-commentary .hp-m-discuss-item-wrap {
+  background: #ffffff;
+}
+.hupu-m-detail-content-night .light-reply-commentary .hp-m-commentary-header {
+  background-color: #ffffff;
+}
+.hupu-m-detail-content .grey-padding {
+  height: 5px;
+  background-color: #F5F6F7;
+}
+.bbs-detail-wrap {
+  padding: 10px 15px 10px 15px;
+  background: #ffffff;
+  overflow: hidden;
+}
+.bbs-detail-wrap .bbs-user .mode-tab-item {
+  width: 76px;
+  height: 24px;
+  border-radius: 15px;
+  font-family: PingFangSC-Regular;
+  font-size: 12px;
+  color: #232931;
+  /* line-height: 24px; */
+  text-align: center;
+  background: #ffffff;
+  margin-right: -5px;
+}
+.bbs-detail-wrap .bbs-user .mode-tab-item-active {
+  font-family: PingFangSC-Regular;
+  color: #c01e2f;
+}
+.bbs-detail-wrap .bbs-user-title {
+  line-height: 28px;
+  font-size: 22px;
+  color: #232931;
+  font-family: PingFangSC-Regular;
+  font-weight: 500;
+  margin: 0;
+}
+.bbs-detail-wrap .bbs-user-info {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  margin: 20px 0;
+}
+.bbs-detail-wrap .bbs-user-info-avator {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.bbs-detail-wrap .bbs-user-info-avator img {
+  width: 100%;
+  height: 100%;
+}
+.bbs-detail-wrap .bbs-user-info-wrap {
+  margin-left: 10px;
+  width: 65%;
+}
+.bbs-detail-wrap .bbs-user-info-name {
+  font-size: 14px;
+  color: #232931;
+  font-family: PingFangSC-Semibold;
+  line-height: 28px;
+  font-weight: 600;
+}
+.bbs-detail-wrap .bbs-user-info-time {
+  font-size: 10px;
+  font-family: PingFangSC-Regular;
+  color: #8A8F9B;
+}
+.bbs-detail-wrap .bbs-user-info-time span {
+  margin-left: 10px;
+}
+.bbs-detail-wrap .bbs-thread {
+  font-size: 18px;
+  line-height: 29px;
+  text-align: justify;
+  letter-spacing: 0;
+  word-break: break-all;
+  font-family: BlinkMacSystemFont, PingFangSC-Regular;
+  color: #232931;
+}
+.bbs-detail-wrap .bbs-thread img {
+  width: 100%;
+}
+.bbs-detail-wrap .vote-container {
+  margin: 5px 0;
+}
+.bbs-reflow-wrap {
+  position: relative;
+  max-height: 1700px;
+  overflow: hidden;
+}
+.hp-m-commentary {
+  box-sizing: border-box;
+  background: #ffffff;
+}
+
+.hp-m-commentary-content {
+  font-size: 20px;
+  font-weight: bolder;
+  color: #232931;
+  letter-spacing: 0;
+  margin-top: 0;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+
+.hp-m-commentary-no-reply {
+  background-color: #ffffff;
+  background-image: url("https://w4.hoopchina.com.cn/images/m/no_reply.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 150px;
+  width: 100%;
+  height: 300px;
+  border-top: 5px solid #f5f5f5;
+}
+.tc {
+  text-align: center;
+}
+.hp-m-commentary {
+  box-sizing: border-box;
+}
+.hp-m-commentary-header {
+  margin-top: 10px;
+  padding-top: 0px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+}
+
+.hp-m-commentary-lzonly {
+  width: 76px;
+  height: 29px;
+  margin-right: 10px;
+  text-align: center;
+  background: #ffffff;
+  border-radius: 15px;
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: #232931;
+}
+.hp-m-commentary-no-reply {
+  background-color: #ffffff;
+  background-image: url("https://w4.hoopchina.com.cn/images/m/no_reply.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 150px;
+  width: 100%;
+  height: 300px;
+  border-top: 5px solid #f5f5f5;
+}
+.hp-m-discuss-item-wrap {
+  position: relative;
+  width: 100%;
+  padding-top: 15.5px;
+  padding-bottom: 15px;
+  border-bottom: 0.5px solid #e5e5e5;
+}
+.hp-m-discuss-item-wrap-title {
+  position: relative;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  align-items: center;
+  width: 100%;
+  padding: 0 15px;
+  font-size: 14px;
+  color: #232931;
+  line-height: 32px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.hp-m-discuss-item-wrap-title .title-header-logo {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+.hp-m-discuss-item-wrap-title .title-header-logo > img {
+  border-radius: 50%;
+}
+.hp-m-discuss-item-wrap-title > .user-nickname {
+  color: #666666;
+  text-align: left;
+  font-family: PingFangSC-Regular;
+  padding-left: 10px;
+  -webkit-flex: 1;
+  flex: 1;
+  box-sizing: border-box;
+}
+.hp-m-discuss-item-wrap-title {
+  position: relative;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  align-items: center;
+  width: 100%;
+  padding: 0 15px;
+  font-size: 14px;
+  color: #232931;
+  line-height: 32px;
+  box-sizing: border-box;
+  overflow: visible;
+}
+.hp-m-discuss-item-wrap-title a {
+  height: 32px;
+}
+.hp-m-discuss-item-wrap-title .title-header-logo {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-position: -1px -49.5px;
+  background-repeat: no-repeat;
+  background-size: 133px 135px;
+}
+.hp-m-discuss-item-wrap-title .title-header-logo > img {
+  border-radius: 50%;
+}
+.hp-m-discuss-item-wrap-title > .user-nickname {
+  color: #666666;
+  text-align: left;
+  font-family: PingFangSC-Regular;
+  padding-left: 10px;
+  -webkit-flex: 1;
+  flex: 1;
+  box-sizing: border-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.hp-m-discuss-item-wrap-title > .user-nickname a {
+  color: #666666;
+}
+.hp-m-discuss-item-wrap-title .lz-icon {
+  width: 34px;
+  height: 15px;
+  display: inline-block;
+  padding: 2px;
+  margin-left: 5px;
+  border: 1px solid #8a8f9b;
+  color: #8a8f9b;
+  font-size: 11px;
+  font-family: PingFang-SC-regular;
+  line-height: 100%;
+  text-align: center;
+  border-radius: 8px;
+}
+.hp-m-discuss-item-wrap-title > .discuss-light {
+  position: relative;
+  font-size: 12px;
+  height: 100%;
+  color: #8a8f9b;
+  box-sizing: border-box;
+  font-family: PingFangSC-Semibold;
+  font-weight: bolder;
+}
+.hp-m-discuss-item-wrap-title > .discuss-light > .light-icon {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: 7px;
+  left: -20px;
+  background-image: url("https://w4.hoopchina.com.cn/images/m/icon_sprites.png");
+  background-position: -96.5px -158.5px;
+  background-repeat: no-repeat;
+  background-size: 170px 180px;
+}
+@-webkit-keyframes shake {
+  0%,
+  100% {
+    -webkit-transform: translateY(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translateY(-10px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translateY(10px);
+  }
+}
+.hp-m-discuss-item-wrap-title > .discuss-light > :active {
+  -webkit-animation-name: shake;
+  -webkit-animation-duration: 1s;
+}
+.hp-m-discuss-item-wrap-title > .light {
+  color: #c01e2f;
+}
+.hp-m-discuss-item-wrap-title > .light .light-icon {
+  background-image: url("https://w4.hoopchina.com.cn/images/m/icon_sprites.png");
+  background-position: -112.5px -158.5px;
+  background-repeat: no-repeat;
+  background-size: 170px 180px;
+}
+.hp-m-discuss-item-wrap-content-hide {
+  display: none;
+  background: #ff8088;
+}
+.hp-m-discuss-item-wrap-content {
+  margin: 0px 4% 0px 15.2%;
+  color: #232931;
+  font-size: 14px;
+  max-width: 80.8%;
+  width: 100%;
+  white-space: pre-line;
+}
+
+.hp-m-discuss-item-wrap-content > p img,
+.hp-m-discuss-item-wrap-content div img,
+.hp-m-discuss-item-wrap-content center img {
+  width: 100%;
+  margin-bottom: 8px;
+}
+.hp-m-discuss-item-wrap-content-container {
+  max-width: 100%;
+  font-family: PingFangSC-Regular;
+  word-break: normal;
+  overflow-wrap: break-word;
+  line-height: 2;
+}
+
+.hp-m-discuss-item-wrap-content-container a {
+  color: #2d6de8;
+}
+.hp-m-discuss-item-wrap-content-quote {
+  position: relative;
+  overflow: auto;
+  width: 100%;
+  background-color: #f5f5f5;
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #5b5e66;
+  opacity: 0;
+}
+.hp-m-discuss-item-wrap-content-quote a {
+  color: #2d6de8;
+}
+.hp-m-discuss-item-wrap-content-quote .all-quote {
+  display: -webkit-flex;
+  display: flex;
+  text-align: right;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+  right: 5px;
+  font-size: 12px;
+  bottom: 5px;
+  color: #2d6de8;
+  font-weight: bolder;
+}
+.hp-m-discuss-item-wrap-content-quote .all-quote > span {
+  display: block;
+  width: 14px;
+  height: 14px;
+}
+.hp-m-discuss-item-wrap-content-quote .all-quote .all-quote-expand {
+  background: url("https://w4.hoopchina.com.cn/images/m/quote_show.png") center / 80% no-repeat;
+}
+.hp-m-discuss-item-wrap-content-quote .all-quote .all-quote-fold {
+  background: url("https://w4.hoopchina.com.cn/images/m/quote_hide.png") center / 80% no-repeat;
+}
+.hp-m-discuss-item-wrap-content .fadein {
+  -webkit-animation: 0.3s linear fadein forwards;
+  animation: 0.3s linear fadein forwards;
+  font-family: PingFangSC-Regular;
+}
+.hp-m-discuss-item-wrap-content > .hidden-quote {
+  position: relative;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  white-space: nowrap;
+}
+.hp-m-discuss-item-wrap-content > .hidden-quote .hp-m-discuss-item-wrap-content-quote-content {
+  max-height: 73px;
+  overflow: hidden;
+}
+.hp-m-discuss-item-wrap-content > .hidden-quote .hp-m-discuss-item-wrap-content-quote-content > p,
+.hp-m-discuss-item-wrap-content > .hidden-quote .hp-m-discuss-item-wrap-content-quote-content div,
+.hp-m-discuss-item-wrap-content > .hidden-quote .hp-m-discuss-item-wrap-content-quote-content center {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: inline;
+}
+.hp-m-discuss-item-wrap-footer {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-align-items: baseline;
+  align-items: baseline;
+  margin-left: 15.2%;
+  font-size: 12px;
+  font-family: PingFangSC-Regular;
+  padding-right: 15px;
+  box-sizing: border-box;
+}
+.hp-m-discuss-item-wrap-footer .discuss-time {
+  color: #8a8f9b;
+}
+.hp-m-discuss-item-wrap-footer .discuss-time .quote-btn {
+  margin-left: 20px;
+}
+.hp-m-discuss-item-wrap-footer .discuss-time .quote-btn:before {
+  content: "";
+  width: 18px;
+  height: 18px;
+  background-image: url("https://w4.hoopchina.com.cn/images/m/quote.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: inline-block;
+  position: relative;
+  top: 4px;
+}
+.bottom-btn {
+  position: fixed;
+  bottom: 60px;
+  right: 15px;
+  transition: all 0.4s ease 0.1s;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-image: url("https://w4.hoopchina.com.cn/images/m/icon_sprites.png");
+  background-position: -43px -4.5px;
+  background-repeat: no-repeat;
+  background-size: 170px 180px;
+}
+.default-head {
+  background-image: url("https://w4.hoopchina.com.cn/images/m/icon_sprites.png");
+  background-position: 0px -55.5px;
+  background-repeat: no-repeat;
+  background-size: 152px 153px;
+}
+.bbs-thread-content {
+  color: #3c3c3c;
+  font-size: 18px;
+}
+.bbs-thread-content img {
+  width: 100%;
+  margin-bottom: 8px;
+}
+.bbs-thread-content table {
+  width: 100% !important;
+}
+p {
+  margin: 0;
+  padding: 5px 0;
+}
+.bbs-thread-content em {
+  font-style: italic;
+}
+.bbs-thread-content strong {
+  font-weight: 600;
+}
+.footer {
+  font-size: 12px;
+  color: #82878f;
+  text-align: center;
+  padding: 7px 0;
+  line-height: 22px;
+}
+.footer a {
+  color: #82878f;
+}
+.footer .btn-list {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.footer .btn-list i {
+  width: 1px;
+  height: 12px;
+  margin: 0 10px;
+  background: #d8dde9;
+}
+.footer .font-color-light {
+  color: #cccccc;
+}
+
+.bottom-reflow-bar-a {
+  width: 100%;
+  padding: 0 15px;
+  height: 50px;
+  line-height: 50px;
+  color: #ffffff;
+  font-family: PingFang-SC-Regular;
+  font-size: 14px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  align-items: center;
+  overflow: hidden;
+  position: fixed;
+  z-index: 999;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.bottom-reflow-bar-a .hupu-logo {
+  width: 38px;
+  height: 38px;
+  background-image: url("./png/icon@2x.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-right: 0px;
+}
+.bottom-reflow-bar-a .hupu-name {
+  width: 62%;
+  text-align: left;
+}
+.bottom-reflow-bar-a .reflow-btn {
+  width: 72px;
+  height: 28px;
+  color: #ffffff;
+  line-height: 28px;
+  text-align: center;
+  background: #c01e2f;
+  border-radius: 14px;
+}
+h1 {
+  font-family: PingFangSC-Medium;
+  font-size: 21px;
+  text-align: left;
+  font-weight: 500;
+  margin: 15px 15px 10px 15px;
+  padding: 10px 0 0 0;
+  color: #333333;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset=UTF-8>
+        <title>用户协议</title>
+    		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1, user-scalable=no" />
+    		<meta name="apple-mobile-web-app-capable" content="yes">
+    		<meta name="format-detection" content="telephone=no">
+
+    		<link rel="stylesheet" type="text/css" href="UserAgreement.css">
+                
+        <script>
+                /**
+                 * 设置App的主题皮肤
+                 * @param {String} themeName 主题的名称
+                 * @param {boolean} notStorage 不存储当前值
+                 */
+                function setAppTheme(themeName, notStore) {
+                    document.documentElement.setAttribute("apptheme", themeName);
+                    
+                    if(!notStore && localStorage){
+                        localStorage.AppTheme = themeName;
+                    }
+                }
+                
+                /**
+                 * 初始化App主题皮肤
+                 */
+                function initialAppTheme() {
+                    var themeName = localStorage.getItem("AppTheme");
+                    setAppTheme(themeName, true);
+                }
+                
+      </script>
+    </head>
+  <body>
+  <div>
+    <p id="title" style="text-align: center;">
+    社区宝用户协议
+    </p>
+    <p class="name" style="text-align: left;">
+    尊敬的社区宝用户：
+    </p>
+    <p class="detail">
+                衷心感谢您对社区宝的关注与支持！
+            <br/>
+            　　为了更好地为您提供服务，请您仔细阅读并充分理解以下《社区宝用户协议》（下称“本协议”）、充分理解各条款内容，特别是授权、免除或者限制责任的条款、法律适用和争议解决条款等以粗体划线重点标识的条款。并选择接受或不接受。授权、免责或者限制责任的条款可能以黑体加粗形式提示您注意。如您未满18周岁，请您在法定监护人陪同下仔细阅读并充分理解本协议，并征得法定监护人的同意后下载/使用虎扑相关软件或服务。
+            <br/>
+            如果您对本协议的任何条款表示异议，您可以选择不下载、安装、注册、登录、使用（以下统称“使用”）虎扑为您提供的任何软件或服务。无论您以何种方式使用虎扑提供的任何软件服务，即视为您已充分理解本协议并承诺作为本协议的一方当事人完全接受本协议的全部条款。
+            <br>
+            　　1、由于互联网和移动通讯网络数据传输原因导致的中断、停顿、延迟、丢失、错误、传输异常等情况；
+            <br/>
+            　　2、移动通讯网络、互联网被恶意攻击或者存在感染病毒导致出现的故障以及其他不可预测的状况；
+            <br/>
+            　　3、因手机配置、性能等情况导致于本软件不适配、操作不当或不熟练等人为因素造成本软件的无法使用；
+            <br/>
+            　　4、用户应尽量保证在安全环境下使用本软件，在使用过程中因保管不善出现财产损失从而导致第三人获取您的账户资料、密码信息等可能造成的相关风险；
+            <br/>
+            　　5、本软件中的部分资讯来源于第三方，我们不能保证资讯的及时性、数据资料的准确性、真实性、完整性等。
+            <br/>
+            　　6、其他非社区宝功能无法提供的服务除外；
+            <br/>
+            　　7、本声明的最终解释权归社区宝所有。
+            <br/>
+            　　本软件对于用户的所有通知均可通过用户预留的任一联系方式（包括但不限于电子邮件、手机号码）或者本网站公告的方式送达。该等通知于发送之日视为已送达用户。
+            <br/>
+            　　您在使用本软件时遇到任何问题，均可拨打社区宝客服热线联系我们。
+            <br/>
+            　　客服热线：021-66669999
+            <br/>
+            　　社区宝官网： http://www.shequbao.com
+            <br/>
+        </p>     
+  </div>
+  
+  <script>
+     initialAppTheme();
+  </script>
+</body>
+
+</html>
